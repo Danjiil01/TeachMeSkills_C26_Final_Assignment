@@ -1,5 +1,7 @@
 package com.teachmeskills.finalassigment.authentication;
 
+import com.teachmeskills.finalassigment.exceptions.AuthenticationException;
+
 import java.util.HashMap;
 import java.util.Map;
 
