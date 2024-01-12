@@ -1,4 +1,4 @@
 package com.teachmeskills.finalassigment.exceptions;
 
-public class AuthenticationException {
+public class AuthenticationException extends Throwable {
 }
