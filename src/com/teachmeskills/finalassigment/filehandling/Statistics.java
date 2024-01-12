@@ -1,5 +1,7 @@
 package com.teachmeskills.finalassigment.filehandling;
 
+import com.teachmeskills.finalassigment.const_interface.IFilesConst;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -47,7 +49,7 @@ public class Statistics {
     }
 
     public void moveInvalidFiles() {
-        File invalidFolder = new File("invalid_files");
+        File invalidFolder = new File(IFilesConst.INVALID_FILE_PATH);
         invalidFolder.mkdir();
 
         for (String file : invalidFiles) {

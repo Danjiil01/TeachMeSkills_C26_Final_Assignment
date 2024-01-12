@@ -15,11 +15,12 @@ public class AuthService {
     }
 
     public void authenticate(String username, String password) throws AuthenticationException {
+
         if (users.containsKey(username)) {
             if (users.get(username).equals(password)) {
                 System.out.println("Аутентификация прошла успешно!");
             } else {
-                throw new AuthenticationException("Неверный пароль");
+                throw new AuthenticationException("Неверный логин или пароль");
             }
         } else {
             throw new AuthenticationException("Пользователь не найден");
